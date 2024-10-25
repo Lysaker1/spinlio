@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/src/components/images/back2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2); /* 50% transparent white */
+  margin-top: 68px; /* Add margin to account for fixed header */
+  padding-bottom: 2rem; /* Add some padding at the bottom */
+  overflow-y: auto;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.sidebar {
+  width: 225px;
+  background-color: rgba(244, 244, 244, 0.01); /* 50% transparent light gray */
+  border-right: 1px solid rgba(204, 204, 204, 0.1); /* 50% transparent border */
+}
+
+
+.configurator {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.parameter-panel {
+  width: 310px;
+  /*background-color: rgba(247, 247, 247, 0.05); /* 50% transparent very light gray */
+  border-left: 1px solid rgba(204, 204, 204, 0.2); /* 50% transparent border */
+}
